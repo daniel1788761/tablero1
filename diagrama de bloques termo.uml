@@ -7,12 +7,47 @@
     <packageImport xmi:type="uml:PackageImport" xmi:id="_mc52AL3jEeeUzph4IrQtTA">
       <importedPackage xmi:type="uml:Package" href="pathmap://SysML14_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries"/>
     </packageImport>
-    <packagedElement xmi:type="uml:Class" xmi:id="_07_4oL3qEeeJMbSJjOR1sQ" name="servomotor"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_2f-z4L3qEeeJMbSJjOR1sQ" name="aguja"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_GI0CkL3uEeeJMbSJjOR1sQ" name="tablero"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_GI0CkL3uEeeJMbSJjOR1sQ" name="tablero">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_SUJdMMBCEeeErZI9i2iPiQ" name="Attribute1" type="_UVMu8MBCEeeErZI9i2iPiQ" aggregation="composite" association="_UcpawMBCEeeErZI9i2iPiQ"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="__cdwEsBCEeeErZI9i2iPiQ" name="medidor de temperatura" type="_7pIBUMBCEeeErZI9i2iPiQ" aggregation="composite" association="__cUmIMBCEeeErZI9i2iPiQ"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_IsM2EcBDEeeErZI9i2iPiQ" name="arduino" type="_VofcoL3uEeeJMbSJjOR1sQ" aggregation="composite" association="_IsDFEMBDEeeErZI9i2iPiQ"/>
+    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_VofcoL3uEeeJMbSJjOR1sQ" name="arduino"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_h9EzsL3uEeeJMbSJjOR1sQ" name="servo"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_kCb9sL3uEeeJMbSJjOR1sQ" name="aguja"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_UVMu8MBCEeeErZI9i2iPiQ" name="Servomotor"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_UcpawMBCEeeErZI9i2iPiQ" memberEnd="_SUJdMMBCEeeErZI9i2iPiQ _UczLwMBCEeeErZI9i2iPiQ">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_UczLwMBCEeeErZI9i2iPiQ" type="_GI0CkL3uEeeJMbSJjOR1sQ" association="_UcpawMBCEeeErZI9i2iPiQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_pXYIQMBCEeeErZI9i2iPiQ" name="Block1"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_7pIBUMBCEeeErZI9i2iPiQ" name="Medidor de Temperatura">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_FIDZ48BDEeeErZI9i2iPiQ" name="servomotor" type="_UVMu8MBCEeeErZI9i2iPiQ" aggregation="composite" association="_FIDZ4MBDEeeErZI9i2iPiQ"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_GNpI88BDEeeErZI9i2iPiQ" name="aguja" type="_kCb9sL3uEeeJMbSJjOR1sQ" aggregation="composite" association="_GNpI8MBDEeeErZI9i2iPiQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="__cUmIMBCEeeErZI9i2iPiQ" memberEnd="__cdwEsBCEeeErZI9i2iPiQ __cdwE8BCEeeErZI9i2iPiQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__cdwEMBCEeeErZI9i2iPiQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__cdwEcBCEeeErZI9i2iPiQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="__cdwE8BCEeeErZI9i2iPiQ" name="tablero" type="_GI0CkL3uEeeJMbSJjOR1sQ" association="__cUmIMBCEeeErZI9i2iPiQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_FIDZ4MBDEeeErZI9i2iPiQ" memberEnd="_FIDZ48BDEeeErZI9i2iPiQ _FIDZ5MBDEeeErZI9i2iPiQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_FIDZ4cBDEeeErZI9i2iPiQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_FIDZ4sBDEeeErZI9i2iPiQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_FIDZ5MBDEeeErZI9i2iPiQ" name="medidor de temperatura" type="_7pIBUMBCEeeErZI9i2iPiQ" association="_FIDZ4MBDEeeErZI9i2iPiQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_GNpI8MBDEeeErZI9i2iPiQ" memberEnd="_GNpI88BDEeeErZI9i2iPiQ _GNpI9MBDEeeErZI9i2iPiQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GNpI8cBDEeeErZI9i2iPiQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GNpI8sBDEeeErZI9i2iPiQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_GNpI9MBDEeeErZI9i2iPiQ" name="medidor de temperatura" type="_7pIBUMBCEeeErZI9i2iPiQ" association="_GNpI8MBDEeeErZI9i2iPiQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_IsDFEMBDEeeErZI9i2iPiQ" memberEnd="_IsM2EcBDEeeErZI9i2iPiQ _IsM2EsBDEeeErZI9i2iPiQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_IsDFEcBDEeeErZI9i2iPiQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_IsM2EMBDEeeErZI9i2iPiQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_IsM2EsBDEeeErZI9i2iPiQ" name="tablero" type="_GI0CkL3uEeeJMbSJjOR1sQ" association="_IsDFEMBDEeeErZI9i2iPiQ"/>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_maOVcL3jEeeUzph4IrQtTA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_maOVcb3jEeeUzph4IrQtTA" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#/"/>
@@ -74,10 +109,11 @@
       <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
     </profileApplication>
   </uml:Model>
-  <Blocks:Block xmi:id="_08JCkL3qEeeJMbSJjOR1sQ" base_Class="_07_4oL3qEeeJMbSJjOR1sQ"/>
   <Blocks:Block xmi:id="_2gIk4L3qEeeJMbSJjOR1sQ" base_Class="_2f-z4L3qEeeJMbSJjOR1sQ"/>
   <Blocks:Block xmi:id="_GI9zkL3uEeeJMbSJjOR1sQ" base_Class="_GI0CkL3uEeeJMbSJjOR1sQ"/>
   <Blocks:Block xmi:id="_VopNoL3uEeeJMbSJjOR1sQ" base_Class="_VofcoL3uEeeJMbSJjOR1sQ"/>
-  <Blocks:Block xmi:id="_h9N9oL3uEeeJMbSJjOR1sQ" base_Class="_h9EzsL3uEeeJMbSJjOR1sQ"/>
   <Blocks:Block xmi:id="_kClusL3uEeeJMbSJjOR1sQ" base_Class="_kCb9sL3uEeeJMbSJjOR1sQ"/>
+  <Blocks:Block xmi:id="_UcWf0MBCEeeErZI9i2iPiQ" base_Class="_UVMu8MBCEeeErZI9i2iPiQ"/>
+  <Blocks:Block xmi:id="_pXrDMMBCEeeErZI9i2iPiQ" base_Class="_pXYIQMBCEeeErZI9i2iPiQ"/>
+  <Blocks:Block xmi:id="_7pRyUMBCEeeErZI9i2iPiQ" base_Class="_7pIBUMBCEeeErZI9i2iPiQ"/>
 </xmi:XMI>

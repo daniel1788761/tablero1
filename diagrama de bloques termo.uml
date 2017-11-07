@@ -48,6 +48,29 @@
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_IsM2EsBDEeeErZI9i2iPiQ" name="tablero" type="_GI0CkL3uEeeJMbSJjOR1sQ" association="_IsDFEMBDEeeErZI9i2iPiQ"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Interaction" xmi:id="_0A2j8MNZEeens-drAYajhg" name="Interaction1">
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_HnU0QMNaEeens-drAYajhg" name="termo" coveredBy="_P_AbccNbEeens-drAYajhg _mhABssNbEeens-drAYajhg"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_ILregMNaEeens-drAYajhg" name="comunicacion" coveredBy="_P_AbcsNbEeens-drAYajhg _St8t8cNbEeens-drAYajhg _mhABscNbEeens-drAYajhg _HLWbMcNgEeens-drAYajhg _9ywMwMNiEeens-drAYajhg _9ywMwsNiEeens-drAYajhg _9ywMwcNiEeens-drAYajhg"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_Ij04wMNaEeens-drAYajhg" name="tablero" coveredBy="_St8t8sNbEeens-drAYajhg _HLWbMsNgEeens-drAYajhg _BgYVEcNjEeens-drAYajhg _BgYVEsNjEeens-drAYajhg"/>
+      <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_9ywMwMNiEeens-drAYajhg" name="ActionExecSpecStart" covered="_ILregMNaEeens-drAYajhg" execution="_9ywMwcNiEeens-drAYajhg"/>
+      <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_9ywMwcNiEeens-drAYajhg" name="ActionExecSpec" covered="_ILregMNaEeens-drAYajhg" finish="_9ywMwsNiEeens-drAYajhg" start="_9ywMwMNiEeens-drAYajhg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_P_AbccNbEeens-drAYajhg" name="MessageSend" covered="_HnU0QMNaEeens-drAYajhg" message="_P_AbcMNbEeens-drAYajhg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_P_AbcsNbEeens-drAYajhg" name="MessageRecv" covered="_ILregMNaEeens-drAYajhg" message="_P_AbcMNbEeens-drAYajhg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_St8t8cNbEeens-drAYajhg" name="MessageSend0" covered="_ILregMNaEeens-drAYajhg" message="_St8t8MNbEeens-drAYajhg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_St8t8sNbEeens-drAYajhg" name="MessageRecv0" covered="_Ij04wMNaEeens-drAYajhg" message="_St8t8MNbEeens-drAYajhg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_HLWbMcNgEeens-drAYajhg" name="MessageSend2" covered="_ILregMNaEeens-drAYajhg" message="_HLWbMMNgEeens-drAYajhg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_HLWbMsNgEeens-drAYajhg" name="MessageRecv2" covered="_Ij04wMNaEeens-drAYajhg" message="_HLWbMMNgEeens-drAYajhg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_BgYVEcNjEeens-drAYajhg" name="MessageSend3" covered="_Ij04wMNaEeens-drAYajhg" message="_BgYVEMNjEeens-drAYajhg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_BgYVEsNjEeens-drAYajhg" name="MessageRecv3" covered="_Ij04wMNaEeens-drAYajhg" message="_BgYVEMNjEeens-drAYajhg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_mhABscNbEeens-drAYajhg" name="MessageSend1" covered="_ILregMNaEeens-drAYajhg" message="_mhABsMNbEeens-drAYajhg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_mhABssNbEeens-drAYajhg" name="MessageRecv1" covered="_HnU0QMNaEeens-drAYajhg" message="_mhABsMNbEeens-drAYajhg"/>
+      <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_9ywMwsNiEeens-drAYajhg" name="ActionExecSpecFinish" covered="_ILregMNaEeens-drAYajhg" execution="_9ywMwcNiEeens-drAYajhg"/>
+      <message xmi:type="uml:Message" xmi:id="_P_AbcMNbEeens-drAYajhg" name="datos temp" receiveEvent="_P_AbcsNbEeens-drAYajhg" sendEvent="_P_AbccNbEeens-drAYajhg"/>
+      <message xmi:type="uml:Message" xmi:id="_St8t8MNbEeens-drAYajhg" name="desplegar temperatura" receiveEvent="_St8t8sNbEeens-drAYajhg" sendEvent="_St8t8cNbEeens-drAYajhg"/>
+      <message xmi:type="uml:Message" xmi:id="_mhABsMNbEeens-drAYajhg" name="leer datos" messageSort="asynchCall" receiveEvent="_mhABssNbEeens-drAYajhg" sendEvent="_mhABscNbEeens-drAYajhg"/>
+      <message xmi:type="uml:Message" xmi:id="_HLWbMMNgEeens-drAYajhg" name="vuelve desplegar" messageSort="asynchCall" receiveEvent="_HLWbMsNgEeens-drAYajhg" sendEvent="_HLWbMcNgEeens-drAYajhg"/>
+      <message xmi:type="uml:Message" xmi:id="_BgYVEMNjEeens-drAYajhg" name="re desplega" messageSort="asynchCall" receiveEvent="_BgYVEsNjEeens-drAYajhg" sendEvent="_BgYVEcNjEeens-drAYajhg"/>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_maOVcL3jEeeUzph4IrQtTA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_maOVcb3jEeeUzph4IrQtTA" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#/"/>

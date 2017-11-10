@@ -13,6 +13,15 @@
   <packagedElement xmi:type="uml:Actor" xmi:id="_GfJSML3eEeeUzph4IrQtTA" name="modulo de comunicacion">
     <generalization xmi:type="uml:Generalization" xmi:id="_PHiEUL3eEeeUzph4IrQtTA" general="_DKPL4L3eEeeUzph4IrQtTA"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_RBD54MXCEeex9PSUhPNIcw" name="termostato" node="_wzIkYMXCEeex9PSUhPNIcw _3xqcwMXCEeex9PSUhPNIcw _8UJJcMXCEeex9PSUhPNIcw _F_YfsMXDEeex9PSUhPNIcw _K9sMwMXDEeex9PSUhPNIcw">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_QWF00MXDEeex9PSUhPNIcw" target="_F_YfsMXDEeex9PSUhPNIcw" source="_K9sMwMXDEeex9PSUhPNIcw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_R8KawMXDEeex9PSUhPNIcw" target="_wzIkYMXCEeex9PSUhPNIcw" source="_F_YfsMXDEeex9PSUhPNIcw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_wzIkYMXCEeex9PSUhPNIcw" name="abrir modulo de temperatura" incoming="_R8KawMXDEeex9PSUhPNIcw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_3xqcwMXCEeex9PSUhPNIcw" name="acionar modulo de velocimetro"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_8UJJcMXCEeex9PSUhPNIcw" name="InitialNode1"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_F_YfsMXDEeex9PSUhPNIcw" name="abrir modulo de velocimetro" incoming="_QWF00MXDEeex9PSUhPNIcw" outgoing="_R8KawMXDEeex9PSUhPNIcw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_K9sMwMXDEeex9PSUhPNIcw" name="avrir modulo de cluster" outgoing="_QWF00MXDEeex9PSUhPNIcw"/>
+  </packagedElement>
   <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_9bQhwL3bEeeUzph4IrQtTA">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_9bZrsL3bEeeUzph4IrQtTA" source="http://www.eclipse.org/uml2/2.0.0/UML">
       <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#/"/>
